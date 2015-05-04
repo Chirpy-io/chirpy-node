@@ -2,14 +2,16 @@ var http = require('http');
 
 var trackEvent = function (eventName, queue) {
 
-  if (typeof queue === 'undefined') { queue = false; };
+  if (typeof queue === 'undefined') { 
+    queue = false; 
+  };
 
   var data = {
     event: eventName,
   };
 
   var trackId = module.exports.trackId;
-  var path = (queue) ? '/'+trackId+'/queue' : '/'+trackId;
+  var path = (queue) ? '/' + trackId + '/queue' : '/' + trackId;
 
   var userString = JSON.stringify(data);
 
@@ -19,7 +21,7 @@ var trackEvent = function (eventName, queue) {
   };
 
   var options = {
-    host: '127.0.0.1',
+    host: 'www.chirpy.io',
     port: 3000,
     path: path,
     method: 'POST',
