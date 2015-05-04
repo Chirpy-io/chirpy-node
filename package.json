@@ -1,0 +1,16 @@
+{
+  "name": "chirpy",
+  "version": "1.0.3",
+  "description": "Module for sending events to chirpy.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chirpy",
+    "tracking",
+    "analytics"
+  ],
+  "author": "Tom Frew <tom@explosivetitles.com> (http://explosivetitles.com)",
+  "license": "ISC"
+}
