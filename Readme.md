@@ -1,12 +1,16 @@
-## Chirpy.io tracking
+## Chirpy.io
 
-Install:
+<img src="https://nodei.co/npm/chirpy.png" />
+
+> Knowing users are using your app is both addictive and motivating, but staring at dashboards isn't productive at all. Drop in our tracking code and we will audiolize your data in realtime. Now you can really start litening to your users!
+
+## Install:
 
 ```bash
 $ npm install chirpy --save
 ```
 
-Track events:
+## Usage
 
 ```js
 //Require module
@@ -24,4 +28,3 @@ project.track('myEvent', {labels: ['a', 'b', 'c']}, function(err) {
 ```
 
 You can generate a tracking ID by registering at [chirpy.io](http://chirpy.io)
-
