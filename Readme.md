@@ -10,14 +10,18 @@ Track events:
 
 ```js
 //Require module
-var chirpy = require('chirpy');
+var Chirpy = require('chirpy');
 
-//Set tracking id
-chirpy.id = xxx;
+var project = new Chirpy('your-token');
 
-//Track event*
-chirpy.send('my event');
+project.track('myEvent', function(err) { 
+  console.log(err);
+});
+
+project.track('myEvent', {labels: ['a', 'b', 'c']}, function(err) {
+
+});
 ```
 
-You can generate a tracking ID at www.chirpy.io
+You can generate a tracking ID by registering at (chirpy.io)[http://chirpy.io]
 
