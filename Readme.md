@@ -15,13 +15,13 @@ var Chirpy = require('chirpy');
 var project = new Chirpy('your-token');
 
 project.track('myEvent', function(err) { 
-  console.log(err);
+  if (!err) console.log('Woo!');
 });
 
 project.track('myEvent', {labels: ['a', 'b', 'c']}, function(err) {
-
+  if (!err) console.log('Woo again!');
 });
 ```
 
-You can generate a tracking ID by registering at (chirpy.io)[http://chirpy.io]
+You can generate a tracking ID by registering at [chirpy.io](http://chirpy.io)
 
