@@ -12,5 +12,8 @@
     "analytics"
   ],
   "author": "Tom Frew <tom@explosivetitles.com> (http://explosivetitles.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.55.0"
+  }
 }
